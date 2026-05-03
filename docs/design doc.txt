@@ -1,0 +1,135 @@
+誥誦誧誨誫誩說  Vote4U – Technical Design Document 
+ 
+  1. System Overview 
+Vote4U is a web-based 3D interacƟve applicaƟon that simulates the elecƟon process using a 
+combinaƟon of frontend rendering, 3D visualizaƟon, AI-generated explanaƟons, and cloud-
+based data storage. 
+The system is designed to be: 
+ Fast to build (hackathon-ready) 
+ Smooth to run (demo-safe) 
+ Visually engaging (3D experience) 
+ 
+  2. Architecture 
+Core Stack: 
+ Frontend: JavaScript (AI-generated via Google AnƟgravity) 
+ 3D Engine: Three.js 
+ Backend / Database: Supabase 
+ AI IntegraƟon: API-based (Gemini / OpenAI) 
+ Version Control: GitHub 
+ 
+Architecture Flow: 
+User → Frontend UI → 3D Scene (Three.js) 
+         ↓ 
+    InteracƟon Handler (JS Logic) 
+         ↓ 
+    Supabase (store votes) 
+         ↓ 
+    AI API (generate explanaƟons) 
+         ↓ 
+    UI Response (display results + info) 
+ 
+膆껎껏  3. User Flow (System Level) 
+1. User enters web app 
+2. 3D scene loads (lightweight opƟmized assets) 
+3. User navigates using hybrid controls: 
+o Click-based movement 
+o UI buƩons 
+4. User acƟons: 
+o Register → stored temporarily 
+o Vote → stored in Supabase 
+o View results → fetched and displayed 
+5. AI explanaƟon triggered at each step 
+ 
+굧  4. Component Breakdown 
+꾆  A. 3D Scene Layer 
+ Built using Three.js 
+ Contains: 
+o RegistraƟon Booth 
+o VoƟng Area 
+o Results Zone 
+踰踱踲踳  OpƟmized with: 
+ Low-poly models 
+ Minimal textures 
+ Lazy loading 
+ 
+꾆  B. UI Layer 
+ Overlay interface (HTML/CSS/JS) 
+ Includes: 
+o Input forms 
+o BuƩons 
+o Result panels 
+ 
+꾆  C. InteracƟon Engine 
+Handles: 
+ Click detecƟon 
+ Scene transiƟons 
+ User acƟons 
+ 
+꾆  D. Database (Supabase) 
+Stores: 
+ Votes 
+ Candidate selecƟon 
+Structure: 
+ Table: votes 
+o id 
+o candidate 
+o Ɵmestamp 
+ 
+꾆  E. AI Engine 
+API-based integraƟon for: 
+ Step explanaƟons 
+ User guidance 
+Trigger points: 
+ RegistraƟon 
+ VoƟng 
+ Results 
+ 
+뱅뱆뱇뱈뱉뱊뱋뱌  5. AI IntegraƟon Design 
+Approach: 
+ Use API calls only when needed (to save Ɵme + cost) 
+ Combine: 
+o Pre-deﬁned prompts 
+o Dynamic user context 
+ 
+Example Flow: 
+User clicks “What is voƟng?” → 
+Frontend sends prompt → 
+AI API → 
+Returns simpliﬁed explanaƟon → 
+Displayed in UI panel 
+ 
+구굱국굮굯군  6. Data Handling Strategy 
+ Votes stored in Supabase (persistent) 
+ Session data handled locally 
+ No authenƟcaƟon required (MVP) 
+ 
+  7. Performance Strategy 
+To balance heavy visuals + smooth experience: 
+ Use low-poly 3D models 
+ Limit real-Ɵme rendering load 
+ Avoid unnecessary animaƟons 
+ Load scenes step-by-step 
+ 
+艒  8. Deployment Strategy 
+ Code hosted on GitHub 
+ Live deployment via: 
+o Vercel (preferred for speed) 
+ 
+뮄뮅뮆  9. Constraints & Decisions 
+Chosen: 
+ Three.js → for control + visual impact 
+ Supabase → for simple backend 
+ API AI → for dynamic explanaƟon 
+ 
+Avoided: 
+ Complex backend logic 
+ MulƟplayer features 
+ Heavy asset loading 
+ 
+띙띚띞띟띛띜띝  10. Why This Design Wins 
+ Matches hackathon theme (prompt-driven + AI) 
+ Balanced complexity (not overbuilt) 
+ Strong demo ﬂow 
+ Scalable idea with minimal implementaƟon risk 
+ 
+ 

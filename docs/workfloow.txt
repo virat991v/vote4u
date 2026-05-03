@@ -1,0 +1,23 @@
+/src 
+ ├── index.html 
+ ├── main.js 
+ ├── styles.css 
+ ├── /components 
+ │     ├── Landing.js 
+ │     ├── RegistraƟon.js 
+ │     ├── VoƟng.js 
+ │     ├── Results.js 
+ │     ├── AIAssistant.js 
+ │ 
+ ├── /three 
+ │     ├── scene.js 
+ │     ├── camera.js 
+ │     ├── interacƟons.js 
+ │ 
+ ├── /services 
+ │     ├── supabase.js 
+ │     ├── ai.js 
+ │ 
+ └── /uƟls 
+       ├── state.js 
+       ├── helpers.js 

@@ -1,0 +1,165 @@
+뱅뱆뱇뱈뱉뱊뱋뱌  Vote4U – Prompt Engineering Document 
+ 
+蚘蚓蚔蚕蚖蚗  1. ObjecƟve 
+The goal of prompt engineering in Vote4U is to: 
+ Build applicaƟon components using intent-driven instrucƟons 
+ Generate UI, logic, and explanaƟons eﬃciently 
+ Replace manual coding eﬀort with structured prompts 
+ 
+  2. PrompƟng Strategy 
+Vote4U uses a modular and iteraƟve prompƟng approach: 
+꾆  Modular 
+Each feature is built using separate prompts: 
+ UI structure 
+ VoƟng logic 
+ 3D environment 
+ AI explanaƟons 
+ 
+꾆  IteraƟve 
+Each prompt is reﬁned in stages: 
+ IniƟal prompt 
+ Output review 
+ Improved prompt 
+ 
+꾆  Context-Aware 
+Prompts include: 
+ Role deﬁniƟon 
+ Clear instrucƟons 
+ Output expectaƟons 
+ 
+  3. Prompt Structure Template 
+All prompts follow this structure: 
+Role → Task → Constraints → Output Format 
+ 
+Example Template: 
+Act as a [role]. 
+ 
+Your task is to [speciﬁc goal]. 
+ 
+Constraints: 
+- [rules] 
+ 
+Output: 
+- [expected format] 
+ 
+  4. Core Prompts Used 
+ 
+꾆  4.1 ApplicaƟon Structure Prompt 
+Act as a frontend developer . 
+ 
+Create a web-based interacƟve applicaƟon that simulates the elecƟon process. 
+ 
+Include: 
+- RegistraƟon step 
+- VoƟng interface 
+- Results display 
+ 
+Constraints: 
+- Keep UI simple and beginner-friendly 
+- Ensure smooth navigaƟon 
+ 
+Output: 
+- Structured frontend code 
+ 
+꾆  4.2 VoƟng Logic Prompt 
+Act as a backend logic designer . 
+ 
+Create a voƟng system where: 
+- User selects one candidate 
+- Vote is stored 
+- MulƟple voƟng is prevented 
+ 
+Constraints: 
+- Use simple logic suitable for demo 
+- Ensure data consistency 
+ 
+Output: 
+- JavaScript logic or pseudocode 
+ 
+꾆  4.3 3D Environment Prompt 
+Act as a 3D scene designer. 
+ 
+Design a minimal 3D environment for an elecƟon simulaƟon. 
+ 
+Include: 
+- RegistraƟon booth 
+- VoƟng area 
+- Result secƟon 
+ 
+Constraints: 
+- Keep it lightweight 
+- OpƟmize for web performance 
+ 
+Output: 
+- Scene structure descripƟon or code 
+ 
+꾆  4.4 AI ExplanaƟon Prompt (Key Feature) 
+Act as an educaƟonal assistant. 
+ 
+Explain the elecƟon process step in simple terms. 
+ 
+Topic: [dynamic step] 
+ 
+Constraints: 
+- Use very simple language 
+- Keep explanaƟon under 3 sentences 
+ 
+Output: 
+- Clear explanaƟon text 
+ 
+꾆  4.5 UI Enhancement Prompt 
+Act as a UI/UX designer . 
+ 
+Improve the interface of a voƟng simulaƟon app. 
+ 
+Focus on: 
+- Clean layout 
+- InteracƟve elements 
+- Modern styling 
+ 
+Constraints: 
+- Keep it responsive 
+- Avoid cluƩer 
+ 
+Output: 
+- UI suggesƟons or code 
+ 
+膆껎껏  5. IteraƟon Example 
+IniƟal Prompt: 
+“Create a voƟng app” 
+  Result: Too generic 
+ 
+Improved Prompt: 
+Act as a frontend developer . 
+ 
+Create a simple voƟng interface with 3 candidates. 
+User can select only one and submit vote. 
+ 
+Display conﬁrmaƟon aŌer submission. 
+膆  Result: Usable output 
+ 
+  6. Prompt OpƟmizaƟon Techniques 
+Used techniques: 
+ Role-based prompƟng 
+ Constraint-based instrucƟons 
+ Step-by-step breakdown 
+ Output formaƫ ng guidance 
+ 
+  7. Eﬃciency Gains 
+Using prompt engineering: 
+ Reduced development Ɵme 
+ Generated mulƟple components quickly 
+ Allowed rapid iteraƟon 
+ 
+袨袩袪被袬袭  8. Why This MaƩers 
+Vote4U demonstrates how: 
+ Complex systems can be built using prompts 
+ AI can assist in both design and logic 
+ Development shiŌs from coding → thinking 
+ 
+띙띚띞띟띛띜띝  9. Future Scope 
+ Dynamic prompts based on user input 
+ Personalized explanaƟons 
+ MulƟ-language AI support 
+ 
+ 
